@@ -1,4 +1,4 @@
-# technoriti-hackathon
+# Technoriti Hackathon
 
 ``Club Management Website``
 

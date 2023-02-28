@@ -1,0 +1,9 @@
+.addEvent input,.addEvent label{
+width:80%;
+margin: auto;
+}
+
+.addEvent button{
+    width:50%;
+    margin: auto;
+}

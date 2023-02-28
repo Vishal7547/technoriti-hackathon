@@ -50,7 +50,10 @@ margin-top:50px;
     color:rgb(219, 63, 89);
     border-bottom: 1px solid rgb(219, 63, 89);
 }
-
+.add_style{
+    border-radius: 0 !important;
+    font-size: large;
+}
 .navbar-brands{
     text-decoration: none;
     padding:0 10px;
@@ -149,7 +152,7 @@ margin: 30px 0;
 
 .container_review{
    position: relative; 
- background-color: grey;
+   background-color: rgba(255, 255, 255, 0.863);
    padding: 30px;
  
 }
@@ -166,8 +169,32 @@ border-radius: 50%;
 }
 .review_text{
     padding: 0 30px;
+    color:black;
+   
 }
 .review_text p{
 font-weight: 300;
 font-size: larger;
+font-weight: 700;
+}
+
+.text-center .name{
+font-style: italic;
+}
+
+/* sponsor */
+/* section-e */
+
+.sponserPic{
+    height:70px;
+    width:70px;
+    border-radius:50%;
+    margin: auto;
+
+}
+.sponserPic img{
+height:100%;
+width:100%;
+border-radius: 50%;
+object-fit:cover;
 }

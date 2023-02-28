@@ -1,2 +1,4 @@
-const event=document.getElementById('homeEvent');
-
+function adminLogin()
+{
+    window.open("admin_login.html");  
+}

@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/loginForm/login_form.css">
 <link rel="stylesheet" href="css/loginForm/registrationForm.css">
+<link rel="stylesheet" href="css/memberRegister/memberRegister.css">
 </head>
 
 <body>
@@ -81,8 +82,13 @@
             <!-- registration form-->
             <div class="row justify-content-center">
                 <div class="col-8">
+                   
                     <div class="loginForm">
-
+                    <div class="row ">
+                        <button id="submitForm" onclick="register()" class="btn btn-danger submit_Btn btnDesign">Register</button>
+                        <button id="submitForm" onclick="login()" class="btn btn-danger submit_Btn btnDesign">Login</button>
+                        
+                    </div>
                         
 
                         <div class="mb-1">
@@ -124,7 +130,7 @@
                         
 
                         <div class="submit_btn w-0 m-auto">
-                            <button id="submitForm" class="btn btn-danger submit_Btn">Submit</button>
+                            <button id="registerData" class="btn btn-danger submit_Btn">Submit</button>
                         </div>
 
                     </div>

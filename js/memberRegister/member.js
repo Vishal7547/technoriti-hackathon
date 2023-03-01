@@ -1,4 +1,4 @@
-const submitForm=document.getElementById('submitForm');
+const submitForm=document.getElementById('registerData');
 
 const memberOfClub = window.localStorage.getItem("members");
 let member = memberOfClub ? JSON.parse(memberOfClub)  : [];
@@ -9,7 +9,7 @@ function addEventTask(x){
         member.push(x);
         window.localStorage.setItem("members", JSON.stringify(member));
         showNotification('register successfully ');
-        // window.open('event.html');
+        window.open('memberLogin.html');
         console.log(member);
         return;
     }
@@ -48,7 +48,7 @@ submitForm.addEventListener('click',function(){
     const mobile=document.getElementById('mobile').value;
     if(name == "" || college=="" || year == ""  || branch == ""  || mobile == "" || password==""){
         showNotification('box can not be empty');
-    
+        
         return;
     }
     
@@ -73,4 +73,12 @@ insertArray(obj);
 
 function showNotification(e){
     alert(e);
+}
+
+function login(){
+window.open('memberLogin.html');
+}
+
+function register(){
+window.open('memberRegister.html');
 }

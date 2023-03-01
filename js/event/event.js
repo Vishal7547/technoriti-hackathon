@@ -17,7 +17,7 @@ eventCard.innerHTML +=
                 <div class="content_event">
                     <h2>${e.title}</h2>
     
-                    <span>start on <br> ${e.title} </span>
+                    <span>start on <br> ${e.date} </span>
                     <span>Entry fee <br> ${e.fee} </span>
                     <span>Location <br> ${e.location}</span>
                     <span>Venue <br>${e.venu} </span>

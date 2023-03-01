@@ -20,6 +20,8 @@
     <!-- css(home.js) link -->
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/event/event.css">
+  
+
 
 </head>
 
@@ -76,16 +78,16 @@
          <div class="row button_filter text-center my-5">
              <div style="margin: auto;">
                    <!-- button filter -->
-              <button  class="btn btn-danger  button_filter_event" onclick="technical()">Technical Event</button>
-              <button   class="btn btn-danger button_filter_event" onclick="sport()">Sport Event</button>
-              <button class="btn btn-danger button_filter_event" onclick="cultural()">Cultural Event</button>
-              <button class="btn btn-danger button_filter_event" onclick="comingSoon()">Coming Event</button>
-              <button class="btn btn-danger button_filter_event">More</button>
+              <button  class="btn btn-danger  button_filter_event mt-3" onclick="technical()">Technical Event</button>
+              <button   class="btn btn-danger button_filter_event mt-3" onclick="sport()">Sport Event</button>
+              <button class="btn btn-danger button_filter_event mt-3" onclick="cultural()">Cultural Event</button>
+              <button class="btn btn-danger button_filter_event mt-3" onclick="comingSoon()">Coming Event</button>
+              <button class="btn btn-danger button_filter_event mt-3">More</button>
              </div>
             </div>
        <div class="row event_box tag_filter">
-        <div class="col-md-9">
-            <div class="row" id="eventCard">
+        <div class="col-md-9" id="increseatsmall">
+            <div class="row justify-content-center" id="eventCard">
                <!-- fetch data from event.js -->
                
               <!-- <div class="col-md-5 text-center g-0 border-outline pb-5">
@@ -103,18 +105,15 @@
                     
     <br>
     <button class="btn btn-danger mt-3">Registration</button>
-    <button class="btn btn-danger mt-3">share</button>
+    <button class="btn btn-danger mt-3" onclick="share()">share</button>
 
                 </div>
                </div> -->
 
-
-
-              
             </div>
            </div>
-           <div class="col-md-3">
-            <div class="bg_set_filter_btn">
+           <div class="col-md-3" id="noneAtsmall">
+            <div class="bg_set_filter_btn" >
                 <h4 class="mt-2 tagFilter mb-4">Search by tag name </h4>
             <button class="btn btn-danger filter-block" onclick="a()">Blind Coding</button>
             <button class="btn btn-danger filter-block" onclick="b()">Hackathon</button>
@@ -124,10 +123,10 @@
             <button class="btn btn-danger filter-block" onclick="f()">Bug Hunting</button>
             <button class="btn btn-danger filter-block" onclick="g()">cinematography</button>
             <button class="btn btn-danger filter-block" onclick="h()">Boat Making-Mech</button>
-            <button class="btn btn-danger filter-block" onclick="i()">Competative Programming</button>
+            <button class="btn btn-danger filter-block" onclick="i()">Competitive Programming</button>
             <button class="btn btn-danger filter-block" onclick="j()">Free fire</button>
             <button class="btn btn-danger filter-block" onclick="k()">General Quiz Competition</button>
-            <button class="btn btn-danger filter-block" onclick="l()">Matsya-Aquabot</button>
+            <button class="btn btn-danger filter-block" onclick="l()">Mateys-Aqua bot</button>
             <button class="btn btn-danger filter-block" onclick="m()">FPhotoGraphy</button>
             <button class="btn btn-danger filter-block" onclick="n()">Web Development</button>
             <button class="btn btn-danger filter-block" onclick="o()">Android</button>
@@ -150,6 +149,7 @@
     <!-- script tag -->
     <script src="js/home.js"></script>
     <script src="js/event/event.js"></script>
+   
 </body>
 
 </html>

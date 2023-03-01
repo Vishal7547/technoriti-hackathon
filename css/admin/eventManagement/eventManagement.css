@@ -7,3 +7,25 @@ margin: auto;
     width:50%;
     margin: auto;
 }
+.searchEvent{
+    width:70% !important;
+    margin: auto;
+    border-radius:0;
+}
+
+#eventBox{
+    background-image: url('../../../images/home/event/search-icon.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:100% 0 ;
+    
+    }
+
+.tableDATA{
+    width:70%;
+    margin: auto;
+}    
+.remove{
+    cursor: pointer;
+    color:red !important;
+}

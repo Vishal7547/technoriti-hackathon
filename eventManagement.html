@@ -78,23 +78,33 @@
           <div class="row addEvent">
             <div class="mb-3">
                 <label for="title" class="form-label">Event Name</label>
-                <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+                <input type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Event name">
               </div>
               <div class="mb-3">
                 <label for="location" class="form-label">Event Location</label>
-                <input type="text" class="form-control" id="location">
+                <input type="text" class="form-control" id="location" placeholder="location">
               </div>
              
               <div class="mb-3">
                 <label for="image" class="form-label">Image Link</label>
-                <input type="text" class="form-control" id="image">
+                <input type="text" class="form-control" id="image" placeholder="image-link">
               </div>
               <div class="mb-3">
                 <label for="venu" class="form-label">venue</label>
-                <input type="text" class="form-control" id="venu">
+                <input type="text" class="form-control" id="venu" placeholder="online or offline" >
               </div>
 
-              <button type="submit" class="btn btn-danger">Submit</button>
+              <div class="mb-3">
+                <label for="lastDate" class="form-label">last date</label>
+                <input type="datetime-local" class="form-control" id="lastDate">
+              </div>
+
+              <div class="mb-3">
+                <label for="eventDate" class="form-label">event date</label>
+                <input type="date" class="form-control" id="eventDate">
+              </div>
+
+              <button  class="btn btn-danger" onclick="addEvent()">Add</button>
           </div>
     </div>
    </div>
@@ -114,6 +124,32 @@
               </div>
 
               <!-- data in table -->
+              <div class="row">
+    <input type="text" class="form-control searchEvent" id="eventBox" placeholder="Date,Category,Location">
+    
+    <table class="table table-dark table-striped tableDATA">
+        <thead>
+          <tr>
+            <th scope="col">event name</th>
+            <th scope="col">date</th>
+            <th scope="col">location</th>
+            <th scope="col">venue</th>
+            <th scope="col">Delete</th>
+            
+          </tr>
+        </thead>
+        <tbody id="list">
+          <!-- <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+          </tr> -->
+        </tbody>
+      </table>
+    
+</div>
         </div>
     </div>
 </section>

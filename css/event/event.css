@@ -70,7 +70,7 @@ margin: 10px 0;
 .bg_set_filter_btn{
     border-radius: 20px;
    
-    background-color: rgba(128, 128, 128, 0.966);
+    border:1px solid rgb(219, 63, 89);
 }
 
 

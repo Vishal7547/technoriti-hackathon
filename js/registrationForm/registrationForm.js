@@ -1,14 +1,16 @@
 const submitForm=document.getElementById('submitForm');
 
-const eventManagements = window.localStorage.getItem("eventsManagement");
-let events= eventManagements ? JSON.parse(eventManagements)  : [];
+const financeManagements = window.localStorage.getItem("registerStudent");
+let finance= financeManagements ? JSON.parse(financeManagements)  : [];
 
 
-function addEventTask(event){
-    if(event){
-        events.push(event);
-        window.localStorage.setItem("registerStudent", JSON.stringify(events));
+function addEventTask(x){
+    if(x){
+        finance.push(x);
+        window.localStorage.setItem("registerStudent", JSON.stringify(finance));
         showNotification('register successfully ');
+        window.open('event.html');
+        console.log(finance);
         return;
     }
     showNotification('something wrong');
@@ -17,7 +19,7 @@ function addEventTask(event){
 
 
 function insertArray(obj){
-    const event={
+    const finance={
         event:obj.event,
          id:Date.now(),
          name:obj.name,
@@ -29,7 +31,7 @@ function insertArray(obj){
         fee:localStorage.getItem("eventFee")
 
      }
-   addEventTask(event);
+   addEventTask(finance);
   
     //  console.log(task);
 }

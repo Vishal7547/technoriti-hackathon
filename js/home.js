@@ -6,3 +6,7 @@ function more(){
     window.open("event.html");  
 
 }
+
+function join(){
+    window.open("memberRegister.html");  
+}

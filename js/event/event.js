@@ -205,7 +205,7 @@ if(navigator.share){
 // register function
 
 function register(a){
-    alert(a);
+  
     window.localStorage.setItem("eventFee",a);
     window.open('registrationForm.html');
 }

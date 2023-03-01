@@ -117,5 +117,28 @@ function handleClickListener(e){
 document.addEventListener('click',handleClickListener);
 
 
+let searchBar=document.getElementById('eventBox');
 
+searchBar.addEventListener('keyup',function(event){
+        let keyWord=searchBar.value.toLowerCase();
+        // console.log(keyWord);
+        let filterEvent=events.filter((x)=>{
+        //    x = x.toLowerCase();
+        if(x.title.indexOf(keyWord) > -1){
+            return x.title.indexOf(keyWord) > -1
+        }else if(x.eventDate.indexOf(keyWord) > -1){
+            return x.eventDate.indexOf(keyWord) > -1
+
+        }
+          
+        });
+        console.log(filterEvent);
+
+        renderList(filterEvent);
+
+      
+       
+    
+       
+    });
 

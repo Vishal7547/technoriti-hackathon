@@ -9,7 +9,7 @@ const admin=[
 window.localStorage.setItem("adminId", JSON.stringify(admin));
 const storeId = window.localStorage.getItem("adminId");
 let id =JSON.parse(storeId);
-console.log("id: ",id);
+// console.log("id: ",id);
 
 // console.log(id);
 
@@ -23,6 +23,7 @@ console.log("email: ",obj.email,"email2: ",id[0].email,"id: ",obj.password, "id2
         showNotification('password or email is wrong');
     }else{
         showNotification('login successfully');
+        window.open('admin.html');
 
     }
 }
@@ -38,7 +39,7 @@ let obj={
 
 }
 validation(obj);
-console.log(obj);
+// console.log(obj);
 
 
 })

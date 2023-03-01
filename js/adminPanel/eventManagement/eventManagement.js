@@ -1,6 +1,8 @@
 
 const eventManagements = window.localStorage.getItem("eventsManagement");
 let events= eventManagements ? JSON.parse(eventManagements)  : [];
+
+
 console.log(events);
  
 window.onload=()=>{

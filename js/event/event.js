@@ -25,8 +25,8 @@ eventCard.innerHTML +=
                     <span>Venue <br>${e.venu} </span>
                     
     <br>
-    <button class="btn btn-danger mt-3">Registration</button>
-    <button class="btn btn-danger mt-3">share</button>
+    <button class="btn btn-danger mt-3" onclick=register(${e.fee})>Registration</button>
+    <button class="btn btn-danger mt-3" onclick="share()">share</button>
 
                 </div>
                </div>
@@ -188,8 +188,26 @@ function o(){
 
 
 
+// share social media link
+
+function share(a){
+ 
+if(navigator.share){
+    navigator.share({
+        title:"hii there",
+        url:"https://vishal7547.github.io/technoriti-hackathon/",
+    })
+}
 
 
+}
 
+// register function
+
+function register(a){
+    alert(a);
+    window.localStorage.setItem("eventFee",a);
+    window.open('registrationForm.html');
+}
 
 

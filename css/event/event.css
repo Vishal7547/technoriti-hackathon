@@ -72,3 +72,25 @@ margin: 10px 0;
    
     background-color: rgba(128, 128, 128, 0.966);
 }
+
+
+/* media query */
+
+
+@media screen  and (max-width:871px){
+    #noneAtsmall{
+        display: none !important;
+    }
+    #increseatsmall{
+width:100% !important;
+
+    }
+
+
+}
+
+@media screen and (max-width:500px){
+    #eventBoxFilter{
+        width:100% !important;
+    }
+}

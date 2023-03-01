@@ -1,7 +1,10 @@
-// const event =[
-//     {
-//         name:"vishal kumar",
-//         roll_no:"20444",
-//     }
-// ];
-// window.localStorage.setItem("eventData", JSON.stringify(event));
+const eventCard=document.getElementById('eventCard').value;
+
+const eventDataFromLOcalStorage = window.localStorage.getItem("eventsManagement");
+let eventData =JSON.parse(eventDataFromLOcalStorage);
+// console.log(eventData);
+
+function render(x){
+
+}
+render(eventData);

@@ -213,3 +213,12 @@ object-fit:cover;
     background-position: center;
     background-size: 100%;
 }
+@media screen and (max-width:425px){
+    .content_about p{
+    font-size: medium;
+    }
+    #atsmallHome{
+        width:100% !important
+    }
+}
+

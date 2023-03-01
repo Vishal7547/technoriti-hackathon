@@ -39,7 +39,7 @@ background-position:100% 0 ;
     height:100%;
     width:100%;
     padding: 0;
-    object-fit: cover;
+    object-fit: cover !important;
 }
 #dateOfEvant{
     background-color: rgb(219, 63, 89);

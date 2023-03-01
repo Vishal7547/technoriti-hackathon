@@ -17,6 +17,7 @@ function addEventToDOM(event){
     <td>${event.eventDate}</td>
     <td>${event.location}</td>
     <td>${event.venu}</td>
+    <td>${event.fee}</td>
     <td id=${event.id} class="remove">remove</td>
     
     `
@@ -55,7 +56,8 @@ function insertArray(obj){
          venu:obj.venu,
          lastDate:obj.lastDate,
          eventDate:obj.eventDate,
-         category:obj.category
+         category:obj.category,
+         fee:obj.fee
 
      }
    addEventTask(event);
@@ -78,7 +80,8 @@ function addEvent(){
     const lastDate=document.getElementById('lastDate').value;
     const eventDate=document.getElementById('eventDate').value;
     const category=document.getElementById('category').value;
-    if(title == "" || location=="" || image == ""  || venu == "" || lastDate=="" || eventDate == "" || category==""){
+    const fee=document.getElementById('fee').value;
+    if(fee == ""  || title == "" || location=="" || image == ""  || venu == "" || lastDate=="" || eventDate == "" || category==""){
         showNotification('box can not be empty');
         return;
     }
@@ -92,6 +95,7 @@ function addEvent(){
         lastDate,
         eventDate,
         category,
+        fee,
 }
 console.log(obj);
 insertArray(obj);

@@ -55,7 +55,7 @@
                     <a class="nav-link" href="event.html">Event</a>
                   </li>
                 </ul>
-                <button class="btn btn-danger px-5 add_style" type="submit">JOIN</button>
+                <button class="btn btn-danger px-5 add_style" onclick="join()">JOIN</button>
                 <button class="btn btn-outline-danger px-5 add_style add_style_admin" onclick="adminLogin()">LOGIN</button>
             </div>
             </div>
@@ -79,13 +79,13 @@
                 <div class="loginForm">
                    
                         <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <label for="exampleInputEmail1" class="form-label">Admin Email</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="admin Email">
                           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
                         <div class="mb-3">
                           <label for="exampleInputPassword1" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1">
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password">
                         </div>
                         <div class="submit_btn w-0 m-auto">
                         <button  id="submitAdmin"  class="btn btn-danger submit_Btn">Submit</button>

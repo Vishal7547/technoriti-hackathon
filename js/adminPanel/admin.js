@@ -5,3 +5,7 @@ function eventManagement(){
 function FinanceManagement(){
     window.open('financeManagement.html');
 }
+
+function Membership(){
+    window.open('memberShipManagement.html');
+}

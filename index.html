@@ -18,6 +18,10 @@
     <!-- css(home.js) link -->
     <link rel="stylesheet" href="css/home.css">
 
+    <link rel="stylesheet" href="css/loginForm/login_form.css">
+    <link rel="stylesheet" href="css/loginForm/registrationForm.css">
+    <link rel="stylesheet" href="css/memberRegister/memberRegister.css">
+
 </head>
 
 <body>
@@ -63,6 +67,9 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="video_players">
+                  
+
+                   
                     <video autoplay muted loop>
             <source src="video/design.mp4" />
           </video>
@@ -348,7 +355,71 @@
             </div>
         </div>
     </section>
+    <!--feedback -->
+    <section class="section-i">
+        <div class="container">
+            <div class="row">
+                <div class="row heading">
+                    <div class="header_container">
+                        <div class="div-left"></div>
+                        <div class="div-center text-center">
+                            <p>feedback</p>
+                        </div>
+                        <div class="div-right"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- registration form-->
+            <div class="row justify-content-center">
+                <div class="col-8">
+                   
+                    <div class="loginForm">
+                    
+                        
+
+                        <div class="mb-1">
+                            <label for="name" class="form-label">name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+
+                        <div class="mb-1">
+                            <label for="college" class="form-label">college</label>
+                            <input type="text" class="form-control" id="college">
+                        </div>
+
+                        <div class="mb-1">
+                            <label for="mobile" class="form-label">Mobile No</label>
+                            <input type="number" class="form-control" id="mobile">
+                        </div>
+
+
+                        <div class="mb-1">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="msg" class="form-label">Example textarea</label>
+                            <textarea class="form-control" id="msg" rows="3"></textarea>
+                          </div>
+
+                        <div class="submit_btn w-0 m-auto">
+                            <button id="feedback" class="btn btn-danger submit_Btn">Submit</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center mt-4">
+                <h5 id="notification"></h5>
+            </div>
+
+
+        </div>
+    </section>
     <!-- footer -->
+
     <section>
 
 
@@ -363,6 +434,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <!-- script tag -->
     <script src="js/home.js"></script>
+    <script src="js/feedback/feedback.js"></script>
 </body>
 
 </html>

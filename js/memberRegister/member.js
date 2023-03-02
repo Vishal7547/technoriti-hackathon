@@ -28,6 +28,7 @@ function insertArray(obj){
         password:obj.password,
          id:Date.now(),
          mobile:obj.mobile,
+         email:obj.email,
         
          
     
@@ -39,6 +40,7 @@ function insertArray(obj){
 
 
 submitForm.addEventListener('click',function(){
+    const email=document.getElementById('email').value;
    
     const name=document.getElementById('name').value;
     const college=document.getElementById('college').value;
@@ -61,6 +63,7 @@ submitForm.addEventListener('click',function(){
         branch,
         password,
         mobile,
+        email,
        
 }
 console.log(obj);

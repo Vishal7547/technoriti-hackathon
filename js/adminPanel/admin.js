@@ -9,3 +9,9 @@ function FinanceManagement(){
 function Membership(){
     window.open('memberShipManagement.html');
 }
+
+
+function feedback(){
+    window.open('feedbackreviewByAdmin.html');
+
+}

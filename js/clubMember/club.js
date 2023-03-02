@@ -14,6 +14,7 @@ money.map((x)=>{
     <td>${x.college}</td>
     <td>${x.mobile}</td>
     <td>${x.year}</td>
+    <td><a href="mailto:${x.email}">email</a></td>
     
   </tr>
     
